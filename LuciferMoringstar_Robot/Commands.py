@@ -49,7 +49,7 @@ async def start(bot, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("📢 Join Updates Channel 📢", url=invite_link.invite_link)
+                                InlineKeyboardButton("🔰 Join Updates Channel 🔰", url=invite_link.invite_link)
                             ],
                             [
                                 InlineKeyboardButton("🔄 Try Again", callback_data=f"checksub#{file_id}")
@@ -81,7 +81,7 @@ async def start(bot, message):
                         print(e)
                         f_caption=f_caption
                 if f_caption is None:
-                    f_caption = f"{files.file_name}"
+                    f_caption =f"<code>{file_name}</code>\n \n<b>♻️Join with us: @movie_center_RU</b>\n \n<b>♻️Join Our Group: @moviecenter321</b>","
                 buttons = [
                     [
                         InlineKeyboardButton('🎖 Join our channel 🎖', url=f'https://t.me/movie_center_RU')
