@@ -80,7 +80,7 @@ async def start(bot, message):
                     except Exception as e:
                         print(e)
                         f_caption=f_caption
-                if f_caption is None:f"<code>{file_name}</code>\n \n<b>♻️Join with us: @movie_center_RU</b>\n \n<b>♻️Join Our Group: @moviecenter321</b>",
+                if f_caption is None:
                     f_caption =f"{files.file_name}"
                 buttons = [
                     [
