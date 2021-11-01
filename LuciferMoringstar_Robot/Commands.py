@@ -86,7 +86,11 @@ async def start(bot, message):
                     [
                         InlineKeyboardButton('🎖 Join our channel 🎖', url=f'https://t.me/movie_center_RU')
                     ]
+
+                    [
+                        InlineKeyboardButton('🚀 share group 🙏',url=' https://t.me/share/url?url=https://t.me/moviecenter321')
                     ]
+
                 await bot.send_cached_media(
                     chat_id=message.from_user.id,
                     file_id=file_id,
