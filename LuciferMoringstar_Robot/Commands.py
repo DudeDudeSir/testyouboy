@@ -84,7 +84,7 @@ async def start(bot, message):
                     f_caption =f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🎖 Join our channel 🎖', url=f'https://t.me/movie_center_RU')
+                        InlineKeyboardButton('🎖 Join our channel 🎖', url=f'https://t.me/joinchat/ZGw7teBSNIc4ZjY1')
                     ],
 
                     [
