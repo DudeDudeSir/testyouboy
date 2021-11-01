@@ -88,7 +88,7 @@ async def start(bot, message):
                     ]
 
                     [
-                        InlineKeyboardButton('🚀 share group 🙏',url=' https://t.me/share/url?url=https://t.me/moviecenter321')
+                        InlineKeyboardButton('🚀 share group 🙏',url=f'https://t.me/share/url?url=https://t.me/moviecenter321')
                     ]
 
                 await bot.send_cached_media(
