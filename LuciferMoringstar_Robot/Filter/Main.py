@@ -98,7 +98,7 @@ async def filter(client, message):
             [InlineKeyboardButton(text="🚀 NEXT 🚀",callback_data=f"next_0_{keyword}")]
         )    
         buttons.append(
-            [InlineKeyboardButton(text=f"📘 Pages 1/{data['total']}",callback_data="pages")]
+            [InlineKeyboardButton(text=f"📘 Pages 1/{data['total']📘}",callback_data="pages")]
         )
         poster=None
         if API_KEY:
@@ -115,7 +115,7 @@ async def group(client, message):
     if 2 < len(message.text) < 50:    
         btn = []
         search = message.text
-        mo_tech_yt = f"**🗂️ Title:** {search}\n**⭐ Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n**📤 Uploaded by {message.chat.title}**"
+        mo_tech_yt = f"**🗂️ Title:** {search}\n**⭐ Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n**📤 Uploaded by {message.chat.title}\n**🙋𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲:-**{update.from_user.mention}\n**🔰പടം ലഭിക്കുന്നതിനായി താഴെ കാണുന്ന ബട്ടണുകളിൽ ക്ലിക്ക് ചെയ്യുക👇🌟**"
         nyva=BOT.get("username")
         if not nyva:
             botusername=await client.get_me()
@@ -144,7 +144,7 @@ async def group(client, message):
         else:
             buttons = btn
             buttons.append(
-                [InlineKeyboardButton(text="📘 Pages 1/1",callback_data="pages")]
+                [InlineKeyboardButton(text="📘 Pages 1/1",callback_data="pages")📘]
             )
             poster=None
             if API_KEY:
@@ -162,7 +162,7 @@ async def group(client, message):
             [InlineKeyboardButton(text="🚀 NEXT 🚀",callback_data=f"next_0_{keyword}")]
         )    
         buttons.append(
-            [InlineKeyboardButton(text=f"📘 Pages 1/{data['total']}📘",callback_data="pages")]
+            [InlineKeyboardButton(text=f"📘 Pages 1/{data['total']📘}",callback_data="pages")]
         )
         poster=None
         if API_KEY:
