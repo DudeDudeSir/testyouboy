@@ -162,7 +162,7 @@ async def group(client, message):
             [InlineKeyboardButton(text="🚀 NEXT 🚀",callback_data=f"next_0_{keyword}")]
         )    
         buttons.append(
-            [InlineKeyboardButton(text=f"📘 Pages 1/{data['total']}",callback_data="pages")]
+            [InlineKeyboardButton(text=f"📘 Pages 1/{data['total']}📘",callback_data="pages")]
         )
         poster=None
         if API_KEY:
@@ -355,4 +355,4 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "pages":
             await query.answer()
     else:
-        await query.answer("<b><u>Hey {}!!</u>/nകൌതുകും ലേശം കൂടുതൽ ആണല്ലേ👀🔰",show_alert=True)
+        await query.answer("<b><u>Hey {}!!</u>"/nകൌതുകും ലേശം കൂടുതൽ ആണല്ലേ👀🔰",show_alert=True)
